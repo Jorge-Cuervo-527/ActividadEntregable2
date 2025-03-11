@@ -6,8 +6,7 @@ public class Datos {
     private static Scanner scanner = new Scanner(System.in);
 
     //creamos un metodo para capturar los datos de las personas
-    public static String[] capturarPersona() {
-        String[] nombresYGeneros = new String[5];
+    public static void capturarDatos() {
         System.out.println("Por favor ingrese los datos de 5 personas");
         for (int i = 0; i < 5; i++) {
             System.out.println("Persona " + (i + 1));
@@ -32,7 +31,14 @@ public class Datos {
             scanner.nextLine();
 
             personas[i] = new RecolectarDatos(nombre, apellido, genero, edad);
-            nombresYGeneros[i] = nombre + " " + genero;
+        }
+    }
+
+    //creamos un metodo para obtener los nombres y generos de las personas
+    public static String[] obtenerNombresYGeneros() {
+        String[] nombresYGeneros = new String[5];
+        for (int i = 0; i < 5; i++) {
+            nombresYGeneros[i] = personas[i].getNombre() + " " + personas[i].getApellido() + " " + personas[i].getGenero();
         }
         return nombresYGeneros;
     }
@@ -70,7 +76,8 @@ public class Datos {
 
     //creamos un metodo main para ejecutar los metodos
     public static void main(String[] args) {
-        String[] nombresYGeneros = capturarPersona();
+        capturarDatos();
+        String[] nombresYGeneros = obtenerNombresYGeneros();
         System.out.println("Nombres y generos de las personas: ");
         for (String nombreYGenero : nombresYGeneros) {
             System.out.println(nombreYGenero);
