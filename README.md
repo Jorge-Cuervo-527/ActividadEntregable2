@@ -24,3 +24,14 @@
 <p>c) Realizar un método que permita retornar el promedio de las edades capturadas.</p>
 <p>d) Realizar un método que permita retornar la cantidad de personas con género Masculino.</p>
 <p>e) Realizar un método que permita retornar la cantidad de personas con género Femenino.</p>
+
+#### Solución:
+
+<p>Para el desarrollo de esta actividad, primero declaramos una clase a la cual le definimos los atributos: nombre, apellido, genero y edad los cuales estan
+determinados por el modificador de acceso privado y por el tipo de dato que le corresponde a cada atributo.</p>
+<p>Después creamos el método constructor con los parametros correspondientes a los atributos de la clase, cada uno con su tipo de dato correspondiente y utilizamos "this" para diferenciar el atributo de la clase con el parametro del constructor.</p>
+<p>Luego utilizamos los "get" como métodos de acceso para obtener la información de los atributos privados de la clase, manteniendo el principio de encapsulamiento.</p>
+<p>Despuén definimos otra clase, la cual utilizamos para ejecutar el programa. en esta clase creamos un "array" para almacenar los datos de las persona y creamos un nuevo objeto "scanner" para leer las entradas de dichos datos por consola.</p>
+<p>Luego de eso empezamos a crear el método donde vamos a resibir por consola los datos de las 5 personas determinadas por un bucle "for", en el cual incluimos un bucle "while" para validar el genero que el usuario ingrese, hasta que el genero sea valido (m o f).</p>
+<p>Continuamos con la creación de los métodos para obtener "nombres y generos", para calcular "promedio de edades", para contar las personas de "genero masculino", también para contar las personas de "genero femenino" y por ultimo el método main que lo utilizamos para imprimir los resultados.</p>
+
