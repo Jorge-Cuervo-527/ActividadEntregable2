@@ -1,5 +1,5 @@
 # RECOLECCIÓN DE DATOS
-## Programacion 1: Orientada a objetos basica
+## Programacion 1: Orientada a objetos básica
 ## S25 evidencia de aprendizaje 2
 
 ### Grupo de trabajo N 7
